@@ -1,0 +1,53 @@
+:root {
+    --background-color: #972e2e;
+    --primary-color: #d0112b;
+    --secondary-color: #e1e3e9;
+    --white-color: #ffffff;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background: var(--background-color);
+    color: var(--white-color);
+}
+
+/* HEADER */
+
+header {
+    padding: 1rem;
+    margin: 0.8rem;
+}
+
+/* ANCHOR ELEMENTS */
+
+a {
+    text-decoration: none;
+}
+
+/* CARD */
+
+.card {
+    background: var(--primary-color);
+    color: var(--white-color);
+    min-height: 8rem;
+    margin: 0.4rem 0;
+}
+
+
+.card-body > p {
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+.border-around {
+    padding: 1rem;
+    margin: 0.8rem;
+    border-radius: 1rem;
+    background: var(--white-color);
+}
+
+.card > h4 {
+    text-wrap: wrap;
+}
