@@ -9,9 +9,11 @@
 body {
     margin: 0;
     overflow-x: hidden;
+	min-height: 100vh;
     background: url('../images/MDZ_5499.jpg');
-	background-position: top;
+	background-position: center;
 	background-size: cover;
+	background-repeat: no-repeat;
     color: var(--white-color);
 }
 
@@ -29,7 +31,7 @@ body {
 /* HEADER */
 
 .underlined {
-	min-width: 50%;
+	min-width: 100%;
 	border-bottom: 1px solid white;
 }
 
@@ -40,7 +42,19 @@ header {
 
 
 @media only screen and (min-width: 1200px) {
+	body {
+		background-position: top;
+		background-size: cover;
+	}
     .card {
         min-height: 12rem;
     }
+	.underlined {
+		min-width: 50%;
+		border-bottom: 1px solid white;
+	}
+
+	.add-padding-top {
+		padding-top: 1.8rem;
+	}
 }
