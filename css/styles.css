@@ -1,6 +1,7 @@
 :root {
     --background-color: #972e2e;
     --primary-color: #d0112b;
+	--button-color: #044d6d;
     --secondary-color: #e1e3e9;
     --white-color: #ffffff;
 }
@@ -15,6 +16,10 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
     color: var(--white-color);
+}
+
+a {
+	color: white;
 }
 
 /* MATERIAL ICONS */
@@ -40,15 +45,89 @@ header {
     margin: 0.8rem;
 }
 
+/* MAIN CONTENT */
+.red-background {
+	background: var(--primary-color);
+	min-height: 50vh;
+	padding-top: 3rem;
+	border-top: 3rem solid;
+	border-bottom: 3rem solid;
+	border-image: url(../images/frame.png) 20% round;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+.first-section {
+	padding-top: 3rem;
+}
+
+.blue-button {
+	background: var(--button-color);
+	border: none;
+	color: white;
+	margin-top: 1rem;
+	padding: 0.4rem 0.8rem;
+}
+
+/* FA ICONS FORMATTING */
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	border-radius: 55%;
+	width: 3.2rem;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	background-color: var(--primary-color);
+  }
+  
+  .fa:hover {
+	  opacity: 0.7;
+  }
+  
+  .fa-facebook {
+	background: var(--primary-color);
+	color: white;
+  }
+  
+  .fa-twitter {
+	background: var(--primary-color);
+	color: white;
+  }
+
+  /* CARD */
+
+.card-title {
+	position: absolute;
+    color: white;
+    width: 50%;
+    text-align: left;
+    left: 1.4rem;
+    top: 0.2rem;
+    font-weight: 100;
+}
+
+.card {
+	background: transparent;
+	border: none;
+	margin: 0.4rem;
+}
+
+.card button {
+	position: absolute;
+	bottom: 0rem;
+	right: 0.7rem;
+}
+
+
+
+
 
 @media only screen and (min-width: 1200px) {
 	body {
 		background-position: top;
 		background-size: cover;
 	}
-    .card {
-        min-height: 12rem;
-    }
+    
 	.underlined {
 		min-width: 50%;
 		border-bottom: 1px solid white;
@@ -56,5 +135,30 @@ header {
 
 	.add-padding-top {
 		padding-top: 1.8rem;
+	}
+
+	.red-background {
+		border-top: 3.5rem solid;
+		border-bottom: 3.5rem solid;
+	}
+
+	.first-section {
+		padding-top: 8rem;
+	}
+
+	.card-title {
+		position: absolute;
+		color: white;
+		width: 50%;
+		text-align: left;
+		left: 0.4rem;
+		top: 0.2rem;
+		font-weight: 100;
+	}
+
+	.card button {
+		position: absolute;
+		bottom: 2rem;
+		right: 0;
 	}
 }
