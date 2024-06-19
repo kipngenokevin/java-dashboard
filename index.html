@@ -56,31 +56,39 @@
     <main>
 
 		<!-- WELCOME SECTION -->
-		<section class="container border-pattern red-background text-center first-section">
-			<h1>Welcome to our Wi-Fi networks</h1>
-			<p class="lead">We are glad you are here and hope you enjoy your visit</p>
-			<div class="d-flex justify-content-center form-check">
-				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-				<label class="form-check-label" for="flexCheckDefault">
-				  By using our Wi-Fi network, you agree to the following <a href="#">Terms of Service</a>
-				</label>
-			</div>
-			<button type="button" class="blue-button">CONNECT</button>
-		</section>
+		 <div id="first-section">
+			<section class="container border-pattern red-background text-center first-section">
+				<h1>Welcome to our Wi-Fi networks</h1>
+				<p class="lead">We are glad you are here and hope you enjoy your visit</p>
+				<div class="d-flex justify-content-center form-check">
+					<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+					<label class="form-check-label" for="flexCheckDefault">
+					  By using our Wi-Fi network, you agree to the following <a href="#">Terms of Service</a>
+					</label>
+				</div>
+				<button id="connect-button" type="button" class="blue-button">CONNECT</button>
+			</section>
 
-		<!-- SOCIAL MEDIA SECTION -->
+			<!-- SOCIAL MEDIA SECTION -->
 
-		<section class="container d-flex justify-content-center">
-			<a href="#" class="fa fa-instagram"></a>
-			<a href="#" class="fa fa-facebook"></a>
-			<a href="#" class="fa fa-twitter"></a>
-			<a href="#" class="fa fa-google"></a>
-		</section>
+			<section id="social-icons" class="container d-flex justify-content-center">
+				<a href="#" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-google"></a>
+			</section>
+		 </div>
+		
+
+		
 		
 		<!-- CONNECTED -->
-		 <section class="container text-center red-background second-section">
+		 <section id="second-section" class="container text-center red-background second-section hidden">
 			<!-- CARDS -->
 			 <h2>You are connected</h2>
+			 <div class="close-section">
+				<i id="close-button" style="font-size:24px" class="fa close-button">&#xf00d;</i>
+			 </div>
 			 <div class="row d-flex justify-content-center">
 				<!-- CARDS -->
 				<div class="card" style="width: 18rem;">
@@ -102,7 +110,7 @@
 					<button href="#" class="blue-button">Take Me There</button>
 				</div>
 			 </div>
-			
+			 
 		 </section>
 	</main>
 

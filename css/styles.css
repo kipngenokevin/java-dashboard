@@ -49,7 +49,7 @@ header {
 .red-background {
 	background: var(--primary-color);
 	min-height: 50vh;
-	padding-top: 3rem;
+	padding-top: 2rem;
 	border-top: 3rem solid;
 	border-bottom: 3rem solid;
 	border-image: url(../images/frame.png) 20% round;
@@ -118,6 +118,53 @@ header {
 	right: 0.7rem;
 }
 
+.close-section {
+	display: flex;
+	position: relative;
+}
+
+.close-button {
+	position: absolute;
+	top: -5rem;
+	right: 0rem;
+}
+
+/* DISPLAY SECTIONS */
+
+.hidden {
+    display: none;
+}
+
+.slide-in {
+    animation: slideIn 0.5s forwards;
+}
+
+.slide-out {
+    animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
 
 
 
@@ -143,7 +190,7 @@ header {
 	}
 
 	.first-section {
-		padding-top: 8rem;
+		padding-top: 6rem;
 	}
 
 	.card-title {
@@ -151,14 +198,14 @@ header {
 		color: white;
 		width: 50%;
 		text-align: left;
-		left: 0.4rem;
+		left: 1rem;
 		top: 0.2rem;
 		font-weight: 100;
 	}
 
 	.card button {
 		position: absolute;
-		bottom: 2rem;
-		right: 0;
+		bottom: 0rem;
+		right: 0.6rem;
 	}
 }
