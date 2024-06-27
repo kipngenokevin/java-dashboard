@@ -1,129 +1,176 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java House Menu</title>
-    <meta name="description" content="We are more than a coffee shop. A space to connect, unwind and relax.
-    Because when you come to Java House, you are coming home.">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='css/styles.css'>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Java House Dashboard</title>
+		<meta name="description" content="We are more than a coffee shop. A space to connect, unwind and relax.
+		Because when you come to Java House, you are coming home.">
+		<link rel="icon" type="image/png" href="favicon.png">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel='stylesheet' href='css/menu.css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
 <body>
-    <!-- LOGO SECTION -->
-    <header>
+	<!-- HEAD SECTION WITH LOGO -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center header-margin">
+					<img class="img-fluid" src="images/javahouse_logo_colored.png" width="300px">
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- BODY SECTION WITH TABLES -->
+	<main>
+		<div class="container">
+			<div class="row">
+				<!-- BARISTA -->
+				<div class="col-sm-6">
+					<h6 class="section-title">BARISTA CORNER</h6>
+					<table class="items-table">
+						<tr>
+							<th>COFFEE & ESPRESSO </th>
+							<th>Single</th>
+							<th>Double</th>
+							<th>Triple</th>
+						</tr>
+						<tr>
+							<td>
+								House Coffee
+								<img src="images/java-signature.png" alt="java Signature">
+							</td>
+							<td>220</td>
+							<td>260</td>
+							<td>280</td>
+						</tr>
+						<tr>
+							<td>Espresso</td>
+							<td>200</td>
+							<td>240</td>
+							<td>280</td>
+						</tr>
+						<tr>
+							<td>Macchiato</td>
+							<td>220</td>
+							<td>260</td>
+							<td>290</td>
+						</tr>
+						<tr>
+							<td>Americano</td>
+							<td>200</td>
+							<td>250</td>
+							<td>310</td>
+						</tr>
+						<tr>
+							<td>
+								Cappuccino
+								<img src="images/java-signature.png" alt="java signature item">
+								<p>(Also available in cinnamon flavor)</p>
+							</td>
+							<td>260</td>
+							<td>310</td>
+							<td>380</td>
+						</tr>
+						<tr>
+							<td>
+								Caffe Latte
+								<p>(Also available in cinnamon flavor)</p>
+							</td>
+							<td>280</td>
+							<td>330</td>
+							<td>380</td>
+						</tr>
+						<tr>
+							<td>Mocha</td>
+							<td>310</td>
+							<td>360</td>
+							<td>410</td>
+						</tr>
+						<tr>
+							<td>Peppermint Mocha</td>
+							<td>310</td>
+							<td>360</td>
+							<td>410</td>
+						</tr>
+						<tr>
+							<td>
+								Malindi Macchiato
+								<img src="images/java-signature.png" alt="java signature">
+							</td>
+							<td>310</td>
+							<td>370</td>
+							<td>410</td>
+						</tr>
+						<tr>
+							<td>Caramel Macchiato</td>
+							<td>310</td>
+							<td>370</td>
+							<td>410</td>
+						</tr>
+						<tr>
+							<td>Vanilla Latte</td>
+							<td>320</td>
+							<td>360</td>
+							<td>410</td>
+						</tr>
+						<tr>
+							<td colspan="3">Add Almond Milk or Soy Milk</td>
+							<td>100</td>
+						</tr>
+						<tr>
+							<td colspan="3">Add shot of espresso</td>
+							<td>120</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								Add a shot of flavored syrup
+							</td>
+							<td>120</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<p>(Vanilla, caramel, hazelnut, mint & cinnamon)</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<!-- COFFEES -->
+				<div class="col-6">
+					
+					
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<section class="slider-section">
         <div class="container">
-            <div class="row">
+            <div class="row bottom-section">
                 <div class="col-sm-12">
-                    <!-- JAVA LOGO -->
-                    <a href="./">
-                        <img class="img-fluid" src="images/javahouse_logo.png" alt="Javahouse Logo">
-                    </a>
+
+                    <div id="artcaffe-market-slideshow" class="artcaffe-market-slideshow safari">
+                        <!-- <img src="images/Menu Animation 1.gif" alt="Image 1" class="active"> -->
+						<video  preload="metadata" src="images/manyatta.mp4" class="active video" muted="true" autoplay playsinline loop></video>
+						<img class="img" autoplay="autoplay" preload="metadata" playsinline muted="on" loop="loop" src="images/Menu Animation.mp4" alt="Menu Animation">
+                    </div>
                 </div>
+
+                
             </div>
         </div>
-    </header>
-    <!-- MAIN CONTENT -->
-    <main>
-        <div class="container">
-            <!-- JAVA POINTS & MENU -->
-            <div class="row border-around">
-                <div class="col-6">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <p>HALAL</p>
-                            <h4>Halal Menu</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <a href="menu.html"></a>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <p>Kiddie's Menu</p>
-                            <h4>Kiddies</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <a href="menu.html"></a>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <p>Master Menu</p>
-                            <h4>Kenya</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <a href="menu.html"></a>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <p>Master Menu</p>
-                            <h4>Pizza Menu</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <a href="menu.html"></a>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <p>Master Menu</p>
-                            <h4>Uganda</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <a href="menu.html"></a>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <p>Master Menu</p>
-                            <h4>Rwanda</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <a href="menu.html"></a>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <p>Master Menu</p>
-                            <h4>JKIA</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <a href="menu.html"></a>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <p>Master Menu</p>
-                            <h4>Terminal 2</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <a href="menu.html"></a>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <p>Master Menu</p>
-                            <h4>MP Shah</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <a href="menu.html"></a>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <p>Master Menu</p>
-                            <h4>Getrudes</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!--  FOOTER CONTENT  -->
-    <footer></footer>
+
+    </section>
+
+
+	<!-- FOOTER SECTION WITH INFO -->
+	<footer></footer>
+	<script src="js/index.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

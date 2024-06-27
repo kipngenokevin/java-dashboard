@@ -1,0 +1,248 @@
+@font-face {
+	font-family: 'Futura-light';
+	src: url('fonts/Futura.woff2') format('woff2'),
+	  url('fonts/Futura.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: 'Futura-bold';
+	src:
+	  url('fonts/Futura-Bold.woff2') format('woff2'),
+	  url('fonts/Futura-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: 'Futura-medium';
+	src:
+	  url('fonts/futura_medium_bt-webfont.woff') format('woff2'),
+	  url('fonts/futura_medium_bt-webfont.woff2') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: 'GlacialIndifference-Regular';
+	src: url('fonts/GlacialIndifference-Regular.otf') format('opentype');
+  }
+  
+  @font-face {
+	font-family: 'GlacialIndifference-Bold';
+	src: url('fonts/GlacialIndifference-Bold.otf') format('opentype');
+  }
+  
+  @font-face {
+	font-family: 'Garamond';
+	src: url('fonts/GaramondITCbyBT-Bold.otf') format('opentype');
+  }
+  
+  @font-face {
+	font-family: 'Knockout';
+	src: url('fonts/Knockout-HTF28-JuniorFeatherwt.otf') format('opentype');
+  }
+  
+  @font-face {
+	font-family: 'Survey-regular';
+	src: url('fonts/SurveyorDisplay-Book-Pro.otf') format('opentype');
+  }
+  @font-face {
+	font-family: 'Survey-bold';
+	src: url('fonts/SurveyorText-Book-Pro.otf') format('opentype');
+  }
+
+:root {
+	--bs-body-font-family: 'GlacialIndifference-Regular', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important; 
+	--bold-font: 'GlacialIndifference-Bold';
+
+	--nav-display: flex;
+	--nav-padding: 0.8em;
+	--nav-overflow-x: scroll;
+	--nav-min-width: 100%;
+	--nav-border-radius: 0.4em;
+	--nav-margin: 0em 0em;
+	--nav-gap: 0.4em;
+
+	--nav-item-border: 1px solid whitesmoke;
+	--nav-item-padding: 0.5em 0.8em;
+	--nav-item-display: flex;
+	--nav-item-gap: 0.4em;
+	--nav-item-border-radius: 0.3em;
+	--nav-item-background: #2A5136;
+	--nav-item-color: white;
+	--nav-item-font-size: 1.2em;
+
+	--section-title-color: #ceb97e;
+
+	--off-white-color: #f4f3ee;
+}
+
+html {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	max-width: 100%;
+	background: var(--off-white-color);
+	overflow-x: hidden;
+}
+
+table {
+	min-width: 100%;
+	margin-bottom: 2em;
+}
+
+th:nth-child(2) {
+	font-family: 'GlacialIndifference-Bold';
+}
+
+th:nth-child(3) {
+	font-family: 'GlacialIndifference-Bold';
+}
+
+th:nth-child(4) {
+	font-family: 'GlacialIndifference-Bold';
+}
+
+td:first-child {
+	min-width: max-content;
+}
+
+td p {
+	font-family: 'GlacialIndifference-Regular';
+	font-size: smaller;
+	margin-bottom: 0;
+	width: 100%;
+}
+
+nav {
+    display: var(--nav-display);
+    padding: var(--nav-padding);
+    overflow-x: var(--nav-overflow-x);
+    min-width: var(--nav-min-width);
+    border-radius: var(--nav-border-radius);
+    margin: var(--nav-margin);
+	gap: var(--nav-gap);
+}
+
+.nav-item {
+    border: var(--nav-item-border);
+    padding: var(--nav-item-padding);
+    display: var(--nav-item-display);
+    gap: var(--nav-item-gap);
+    border-radius: var(--nav-item-border-radius);
+    background-color: var(--nav-item-background);
+    color: var(--nav-item-color);
+	font-size: var(--nav-item-font-size);
+}
+
+header {
+	margin-top: 20px;
+}
+
+.section-title {
+    margin: 12px 0px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-weight: 100;
+	color: var(--section-title-color);
+}
+
+.green-border {
+    border: 2px solid #2A5136;
+    margin: 1em 0em;
+    padding: 1em;
+}
+
+.coffee-section {
+	background: url('../images/background.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bold-text {
+	font-family: var(--bold-font);
+}
+
+.small-text {
+	font-weight: 100;
+	font-size: xx-small;
+}
+
+.header-margin {
+	padding: 2rem;
+}
+
+/* MENU ANIMATION */
+.artcaffe-slideshow {
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .artcaffe-slideshow img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+	transition: transform ease 1.5s;
+  }
+  
+  .artcaffe-market-slideshow {
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .artcaffe-market-slideshow img,
+  .artcaffe-market-slideshow video {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	object-fit: cover;
+	transition: transform 1s, opacity 1s;
+  }
+  
+  .artcaffe-market-slideshow img.active,
+  .artcaffe-market-slideshow video.active {
+	opacity: 1;
+	transform: translateX(0);
+  }
+
+@media only screen and (max-width: 600px) {
+	body {
+		font-size: 0.8rem !important;
+		padding: 4px;
+	}
+
+	.green-border {
+		padding: 0;
+	}
+
+	.artcaffe-market-slideshow {
+		width: 100%;
+		height: 130px;
+		overflow: hidden;
+		position: relative;
+		margin: 25px 0px;
+	  }
+	  .artcaffe-slideshow {
+		width: 100%;
+		height: 100px;
+		overflow: hidden;
+		position: relative;
+		margin: 25px 0px;
+	  }
+}
